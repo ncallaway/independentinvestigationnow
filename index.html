@@ -12,6 +12,7 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
@@ -20,28 +21,104 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <div class="hero">
-            <div class="container">
-                <div class="hero__headline">
-                    <h2>We're done asking.</h2>
-                    <p>Now we’re demanding. It’s time to stand up for democracy and take to the streets of Washington, D.C.</p>
-                    <div class="button--hero">JOIN US</div>
-                </div>
+        <div class="jumbotron jumbotron--iin">
+            <div class="container container--hero">
+                <div class="row row--hero">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col--headline">
+                        <h2>We're done asking.</h2>
+                        <p>Now we’re demanding. It’s time to stand up for democracy and take to the streets of Washington, D.C.</p>
+                        <div class="btn btn-default btn--hero" data-toggle="modal" data-target="#email-modal">JOIN US</div>
+                    </div>
 
-                <div class="hero__img">
-                    <img src="img/logotype_large.png">
+                    <div class="col-xs-12 col-sm-6 col-md-offset-2 col-md-4 col--img">
+                        <img src="img/logotype_large.png">
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="container">
             <h3>We demand an independent investigation of the interference into our elections. It’s time to Occupy Capitol Hill.</h3>
-            <div class="button">SIGN ME UP</div>
+            <div class="btn-center">
+                <div class="btn btn-primary btn--main" data-toggle="modal" data-target="#email-modal">SIGN ME UP</div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-3 col-xs-12">
+                    <div class="actioncallout">
+                        <img class="actioncallout__img img-responsive" src="img/resist.png">
+                        <div class="actioncallout__label">
+                            assemble
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-3 col-xs-12">
+                    demand
+                </div>
+
+                <div class="col-sm-3 col-xs-12">
+                    disrupt
+                </div>
+
+                <div class="col-sm-3 col-xs-12">
+                    resist
+                </div>
+            </div>
+        </div>
+
+        <!-- Email Signup Modal -->
+        <div class="modal fade" id="email-modal" tabindex="-1" role="dialog" aria-labelledby="email-modal-label">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="email-modal-label">We'll contact you soon.</h4>
+              </div>
+              <div class="modal-body">
+                    <p style="margin-bottom: 15px;">We're working on organizing things right now. As soon as we have a time and a place, we'll send you an e-mail. We won't use your e-mail for anything else. The only thing you'll receive from us is a time and a place to start protesting.</p>
+
+                    <!-- Begin MailChimp Signup Form -->
+                    <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+                    <style type="text/css">
+                        #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+                        /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+                           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+                    </style>
+                    <div id="mc_embed_signup">
+                    <form action="//independentinvestigationnow.us15.list-manage.com/subscribe/post?u=87e8104e7463cdb14a4f4dfe6&amp;id=1b1a3fa7b5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <div id="mc_embed_signup_scroll">
+
+                        <div class="form form-inline">
+                          <div class="form-group">
+                            <label class="sr-only" for="email">Email</label>
+                            <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="email address" required>
+                          </div>
+                          <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default"></div>
+                          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_87e8104e7463cdb14a4f4dfe6_1b1a3fa7b5" tabindex="-1" value=""></div>
+                          <div class="clear">
+                        </form>
+
+
+
+                        </div>
+                    </form>
+                    </div>
+
+                    <!--End mc_embed_signup-->
+
+                    <p class="small" style="margin-top: 15px;">Don't want to give us your e-mail? Don't trust us? Good. Consider creating a disposable e-mail with <a href="https://www.33mail.com/" target="_blank">33mail</a> or <a href="https://www.mailinator.com/" target="_blank">mailinator</a> and give us that instead.</p>
+              </div>
+            </div>
+          </div>
         </div>
 
 
         <script src="js/vendor/jquery-1.12.0.min.js"></script>
         <script src="js/plugins.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/main.js"></script>
 
         <!-- This is where Google Analytics tracking code would go if we were tracking you.

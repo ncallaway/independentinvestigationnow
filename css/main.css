@@ -98,7 +98,142 @@ body {
     font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:400; font-stretch:normal;
 }
 
-.hero {
+.jumbotron.jumbotron--iin {
+    background-image: linear-gradient(-176deg, #150621 3%, #1D092D 96%);
+    color: #FFFFFF;
+}
+
+.jumbotron.jumbotron--iin h2 {
+    font-size: 44px;
+}
+
+.col--img img {
+    float: right;
+}
+
+@media screen and (max-width: 767px) {
+    .row--hero {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .col--headline {
+        -webkit-box-ordinal-group: 2;
+        -moz-box-ordinal-group: 2;
+        -ms-flex-order: 2;
+        -webkit-order: 2;
+        order: 2;
+    }
+
+    .col--img {
+        padding-left: 30px;
+        padding-right: 30px;
+        -webkit-box-ordinal-group: 1;
+        -moz-box-ordinal-group: 1;
+        -ms-flex-order: 1;
+        -webkit-order: 1;
+        order: 1;
+    }
+
+    .col--img img {
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+
+/* ==========================================================================
+    Buttons
+   ========================================================================== */
+
+.btn.btn--hero {
+    border-radius: 4px;
+    font-family: "HelveticaNeueMedium", "HelveticaNeue-Medium", "Helvetica Neue Medium", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;font-weight:500;font-stretch:normal;
+    color: #F20C0C;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.btn.btn--hero:hover {
+    border-radius: 4px;
+    font-family: "HelveticaNeueMedium", "HelveticaNeue-Medium", "Helvetica Neue Medium", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;font-weight:500;font-stretch:normal;
+    color: #F20C0C;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.btn-center {
+    width: 300px;
+    margin: auto;
+}
+
+.btn.btn-primary.btn--main {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 45px;
+    margin-bottom: 60px;
+    background: #31144B;
+    border-radius: 4px;
+    border-color: #62417E;
+    font-family: "HelveticaNeueMedium", "HelveticaNeue-Medium", "Helvetica Neue Medium", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;font-weight:500;font-stretch:normal;
+    /*font-size: 18px;*/
+    color: #FFFFFF;
+    width: 300px;
+    text-align: center;
+}
+
+.btn.btn-primary.btn--main:hover {
+    background: #44295B;
+}
+
+.button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 45px;
+    margin-bottom: 60px;
+    background: #31144B;
+    border-radius: 4px;
+    font-family: "HelveticaNeueMedium", "HelveticaNeue-Medium", "Helvetica Neue Medium", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;font-weight:500;font-stretch:normal;
+    font-size: 18px;
+    color: #FFFFFF;
+    letter-spacing: 2.16px;
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.actioncallout {
+    margin: auto;
+}
+
+.actioncallout__img {
+    max-height: 150px;
+    margin: auto;
+}
+
+.actioncallout__label {
+    text-align: center;
+    font-size: 25px;
+    color: #150721;
+    letter-spacing: 3px;
+}
+
+
+
+/*.hero {
     padding-left: 30px;
     padding-right: 30px;
     background-image: linear-gradient(-176deg, #150621 3%, #1D092D 96%);
@@ -121,7 +256,6 @@ body {
 }
 
 .hero__headline p {
-    /* Now we’re demanding.: */
     font-size: 18px;
     letter-spacing: 2.43px;
     line-height: 24px;
@@ -130,7 +264,6 @@ body {
 
 .hero__img {
     display: inline-block;
-    /*float: right;*/
     width: 40%;
     height: 300px;
     padding-top: 42px;
@@ -171,6 +304,9 @@ body {
 @media screen and (max-width: 767px) {
     .hero {
         height: auto;
+    }
+
+    .container--hero {
         display: -webkit-box;
         display: -moz-box;
         display: -ms-flexbox;
@@ -212,41 +348,22 @@ body {
         display: block;
         margin: 0 auto;
     }
-}
+}*/
 
 /* ==========================================================================
    Author's custom styles - Page Content
    ========================================================================== */
 
-.container {
-    max-width: 1024px;
-    margin: auto;
-}
+
 
 h3 {
     margin-top: 45px;
     font-size: 20px;
     color: #150721;
-    letter-spacing: 2.4px;
     text-align: center;
 }
 
-.button {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 45px;
-    margin-bottom: 60px;
-    background: #31144B;
-    border-radius: 4px;
-    font-family: "HelveticaNeueMedium", "HelveticaNeue-Medium", "Helvetica Neue Medium", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;font-weight:500;font-stretch:normal;
-    font-size: 18px;
-    color: #FFFFFF;
-    letter-spacing: 2.16px;
-    width: 300px;
-    padding: 10px;
-    text-align: center;
 
-}
 
 
 
