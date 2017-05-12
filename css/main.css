@@ -92,20 +92,161 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
+   Author's custom styles - Hero
+   ========================================================================== */
+body {
+    font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:400; font-stretch:normal;
+}
+
+.hero {
+    padding-left: 30px;
+    padding-right: 30px;
+    background-image: linear-gradient(-176deg, #150621 3%, #1D092D 96%);
+    height: 300px;
+    color: #FFFFFF;
+}
+
+.hero__headline {
+    display: inline-block;;
+    width: 60%;
+    float: left;
+}
+
+.hero__headline h2 {
+    font-size: 44px;
+    letter-spacing: 5.28px;
+    margin-bottom: 15px;
+
+    font-family: "HelveticaNeueMedium", "HelveticaNeue-Medium", "Helvetica Neue Medium", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;font-weight:500;font-stretch:normal;
+}
+
+.hero__headline p {
+    /* Now we’re demanding.: */
+    font-size: 18px;
+    letter-spacing: 2.43px;
+    line-height: 24px;
+    margin-bottom: 40px;
+}
+
+.hero__img {
+    display: inline-block;
+    /*float: right;*/
+    width: 40%;
+    height: 300px;
+    padding-top: 42px;
+}
+
+.hero__img img {
+    float: right;
+}
+
+.button--hero {
+    background: #FFFFFF;
+    border-radius: 4px;
+    font-family: "HelveticaNeueMedium", "HelveticaNeue-Medium", "Helvetica Neue Medium", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;font-weight:500;font-stretch:normal;
+    font-size: 18px;
+    color: #F20C0C;
+    letter-spacing: 2.16px;
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+}
+
+@media screen and (max-width: 959px) {
+    .hero {
+        height: 370px;
+    }
+
+    .hero__headline {
+        width: 50%;
+    }
+
+    .hero__img {
+        width: 50%;
+        height: 370px;
+        padding-top: 77px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .hero {
+        height: auto;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .hero__headline {
+        display: block;
+        width: 100%;
+        -webkit-box-ordinal-group: 2;
+        -moz-box-ordinal-group: 2;
+        -ms-flex-order: 2;
+        -webkit-order: 2;
+        order: 2;
+        margin-bottom: 30px;
+    }
+
+    .hero__img {
+        padding-top: 30px;
+        display: block;
+        width: 100%;
+        -webkit-box-ordinal-group: 1;
+        -moz-box-ordinal-group: 1;
+        -ms-flex-order: 1;
+        -webkit-order: 1;
+        order: 1;
+        height: auto;
+    }
+
+    .hero__img img {
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+/* ==========================================================================
+   Author's custom styles - Page Content
    ========================================================================== */
 
+.container {
+    max-width: 1024px;
+    margin: auto;
+}
 
+h3 {
+    margin-top: 45px;
+    font-size: 20px;
+    color: #150721;
+    letter-spacing: 2.4px;
+    text-align: center;
+}
 
+.button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 45px;
+    margin-bottom: 60px;
+    background: #31144B;
+    border-radius: 4px;
+    font-family: "HelveticaNeueMedium", "HelveticaNeue-Medium", "Helvetica Neue Medium", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;font-weight:500;font-stretch:normal;
+    font-size: 18px;
+    color: #FFFFFF;
+    letter-spacing: 2.16px;
+    width: 300px;
+    padding: 10px;
+    text-align: center;
 
-
-
-
-
-
-
-
-
+}
 
 
 
